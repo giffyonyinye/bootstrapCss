@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div>
         <div class="bg-danger w-full m-0">
-            <ul class="d-flex flex-row bd-highlight mb-3 list-unstyled p-2">
-                <li class="ms-4 border-right"><a class="text-white text-decoration-none" href="">FAQ</a></li>
-                <li class="ms-4"><a class="text-white text-decoration-none" href="">Help Desk</a></li>
-                <li class="ms-4"><a class="text-white text-decoration-none" href="">Login</a></li>
+            <ul class="d-flex flex-row bd-highlight mb-3 list-unstyled p-1 small">
+                <li class="ms-4 border-right"><a class="text-white text-decoration-none" href="">FAQ</a> <span class="ms-3 text-white">|</span></li>
+                <li class="ms-4"><a class="text-white text-decoration-none" href="">Help Desk</a> <span class="ms-3 text-white">|</span> </li>
+                <li class="ms-4"><a class="text-white text-decoration-none" href="">Login</a> <span class="ms-3 text-white">|</span> </li>
             </ul>
             
         </div>
@@ -41,7 +43,7 @@
                     <div class="col-md-6">
                         <div class="d-flex">
                             <div>
-                                <i class="fa fa-clock fa-2x text-black "></i>
+                                <i class="fa fa-clock-five fa-2x text-black "></i>
                             </div>
                             <div class="ms-4">
                                 <p class="m-0 small">WE ARE OPEN</p>
@@ -53,12 +55,12 @@
             </div>           
         </div>
 
-        <div class="d-flex justify-content-around mt-4 nav-section" style="background-color:  #202c45;">
-            <ul class="d-flex list-unstyled p-2">
-                <li class=" dropdown-head">
+        <div class="d-flex justify-content-around mt-4 nav-section" style="background-color:#202c45; border-bottom:2px solid red;">
+            <ul class="d-flex list-unstyled p-3">
+                <li class="dropdown-head">
                     <div class="nav-item">
-                        <a href="" class=" text-decoration-none active ">Home</a>
-                        <i class="fa fa-angle-down"></i>
+                        <a href="./index.html" class=" text-decoration-none bg-white text-black" style="padding: .5rem 1rem .5rem 1rem; border-radius: 1.5rem;">Home
+                        <i class="fa fa-angle-down"></i></a>
                     </div>
                     <ul class="dropdown-list list-unstyled">
                         <li><a class="text-decoration-none ms-4 " href="#">Multipage Layout</a></li>
@@ -70,8 +72,7 @@
                 </li>
                 <li class="ms-4 dropdown-head">
                     <div class="nav-item">
-                        <a href="" class=" text-decoration-none active ">Features</a>
-                        <i class="fa fa-angle-down"></i>
+                        <a href="" class=" text-decoration-none active ">Features <span class="label label-default small ms-1 rounded bg-info p-1">New</span> <i class="fa fa-angle-down"></i> </a>
                     </div>
                     <ul class="dropdown-list list-unstyled">
                         <li><a class="text-decoration-none ms-4 " href="#">Multipage Layout</a></li>
@@ -83,8 +84,9 @@
                 </li>
                 <li class="ms-4 dropdown-head">
                     <div class="nav-item">
-                        <a href="" class=" text-decoration-none active ">Pages</a>
-                        <i class="fa fa-angle-down"></i>
+                        <a href="" class=" text-decoration-none active ">Pages
+                            <i class="fa fa-angle-down"></i>
+                        </a>
                     </div>
                     <ul class="dropdown-list list-unstyled">
                         <div class="d-flex justify-content-between pt-2">
@@ -96,11 +98,11 @@
                             <i class="fa fa-angle-right"></i>
                         </div>
                         <div class="d-flex justify-content-between pt-2">
-                            <li><a class="text-decoration-none ms-4 " href="#">Profile</a></li>
+                            <li><a class="text-decoration-none ms-4 " href="./profile.html">Profile</a></li>
                             <i class="fa fa-angle-right"></i>
                         </div>
                         <div class="d-flex justify-content-between pt-2">
-                            <li ><a class="text-decoration-none ms-4 " href="#">Gallery</a></li>
+                            <li ><a class="text-decoration-none ms-4 " href="./gallery.html">Gallery</a></li>
                             <i class="fa fa-angle-right"></i>
                         </div>
                         <div class="d-flex justify-content-between pt-2">
@@ -108,15 +110,16 @@
                             <i class="fa fa-angle-right"></i>
                         </div>
                         <div class="d-flex justify-content-between pt-2">
-                            <li ><a class="text-decoration-none ms-4 " href="#">Multipage Layout</a></li>
+                            <li ><a class="text-decoration-none ms-4 " href="./contact.html">Contact</a></li>
                             <i class="fa fa-angle-right"></i>
                         </div>
                     </ul>
                 </li>
                 <li class="ms-4 dropdown-head">
                     <div class="nav-item">
-                        <a href="" class=" text-decoration-none active ">Portfolio</a>
-                        <i class="fa fa-angle-down"></i>
+                        <a href="" class=" text-decoration-none active ">Portfolio
+                            <span class="label label-default small ms-1 rounded bg-info p-1">New</span>
+                        <i class="fa fa-angle-down"></i></a>
                     </div>
                     <ul class="dropdown-list list-unstyled">
                         <li><a class="text-decoration-none ms-4 " href="#">Multipage Layout</a></li>
@@ -128,8 +131,8 @@
                 </li>
                 <li class="ms-4 dropdown-head">
                     <div class="nav-item">
-                        <a href="" class=" text-decoration-none active ">Courses</a>
-                        <i class="fa fa-angle-down"></i>
+                        <a href="" class=" text-decoration-none active ">Courses
+                        <i class="fa fa-angle-down"></i></a>
                     </div>
                     <ul class="dropdown-list list-unstyled">
                         <li><a class="text-decoration-none ms-4 " href="#">Multipage Layout</a></li>
@@ -141,8 +144,8 @@
                 </li>
                 <li class="ms-4 dropdown-head">
                     <div class="nav-item">
-                        <a href="" class=" text-decoration-none active ">Teachers</a>
-                        <i class="fa fa-angle-down"></i>
+                        <a href="" class=" text-decoration-none active ">Teachers
+                        <i class="fa fa-angle-down"></i></a>
                     </div>
                     <ul class="dropdown-list list-unstyled">
                         <li><a class="text-decoration-none ms-4 " href="#">Multipage Layout</a></li>
@@ -154,8 +157,8 @@
                 </li>
                 <li class="ms-4 dropdown-head">
                     <div class="nav-item">
-                        <a href="" class=" text-decoration-none active ">Blog</a>
-                        <i class="fa fa-angle-down"></i>
+                        <a href="" class=" text-decoration-none active ">Blog
+                        <i class="fa fa-angle-down"></i></a>
                     </div>
                     <ul class="dropdown-list list-unstyled">
                         <li><a class="text-decoration-none ms-4 " href="#">Multipage Layout</a></li>
@@ -167,8 +170,8 @@
                 </li>
                 <li class="ms-4 dropdown-head">
                     <div class="nav-item">
-                        <a href="" class=" text-decoration-none active ">Shortcodes</a>
-                        <i class="fa fa-angle-down"></i>
+                        <a href="" class=" text-decoration-none active ">Shortcodes
+                        <i class="fa fa-angle-down"></i></a>
                     </div>
                     <ul class="dropdown-list list-unstyled">
                         <li><a class="text-decoration-none ms-4 " href="#">Multipage Layout</a></li>
@@ -180,15 +183,55 @@
                 </li>
             </ul>
 
-            <div class="bg-danger text-white p-2">
+            <div class="bg-danger text-white p-2" style="display: flex ; align-items: center;">
                 <a href="" class="text-decoration-none text-white">Book Now</a>
             </div>
         </div>
 
-        <div>
-            <img src="./Images/huh!.jpg" alt="banner-image" width="100%">
-        </div>
+            <!-- -------------CAROUSEL --------------------------- -->
+        <div style="position: relative; " class="slideshow-container">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img  src="./Images/home-pic1.jpg" alt="Los Angeles" class="d-block" height="100%" style="width:100%; background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/home-pic2.jpg" alt="Chicago" class="d-block" height="100%" style="width:100%; background-size: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/home-pic3.jpg" alt="New York" class="d-block" height="100%" style="width:100%; background-size: cover;">
+                    </div>
+                </div>
+                
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>  
+            </div>
+            <div class="text-white w-50" style="position: absolute; top:30%;left: 10%; z-index: 1000;">
+                <h1 style="font-size: 5rem; font-weight: 400;">EDUCATION</h1>
+                <p class="p-2" style="font-size: 1.5rem; background-image: linear-gradient(rgba(0,0,0,.5), rgba(18, 17, 48, 0.5)); border-left: 2px solid red;" >EDUCATION FOR EVERYONE</p>
+                <p >We provide always our best services for our client and always try to achieve our client's trust and satisfaction</p>
+                <div>
+                    <button class="text-white p-2" style="background-color: #202c45; border: none; border-left: 3px solid red;" >View Details</button>
+                </div>
+            </div>
+        </div>
+  
+  
+        <!-- --------------------WELCOME TO EDUCATION----------- -->
         <div class="container pb-4">
             <div class="row">
                 <div class="col-md-8">
@@ -209,7 +252,7 @@
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div>
-                                            <i class="fa fa-hand-scissors  border p-3 text-white rounded-circle" style="background-color: #202c45;"></i>
+                                            <i class="fa fa-scissors  border p-3 text-white rounded-circle" style="background-color: #202c45;"></i>
                                         </div>
                                         <div class="ms-4">
                                             <h6>LESS CSS</h6>
@@ -243,7 +286,7 @@
                                 <div class="col-md-6 ms-4">
                                     <div class="d-flex">
                                         <div>
-                                            <i class="fa fa-pen p-3 rounded-circle"  style="background-color: #f2184f;"></i>
+                                            <i class="fa fa-pencil text-white p-3 rounded-circle"  style="background-color: #f2184f;"></i>
                                         </div>
                                         <div class="ms-4">
                                             <h6>EASY CUSTOMIZ</h6>
@@ -265,7 +308,7 @@
 
                                     <div class="d-flex mt-4">
                                         <div >
-                                            <i class="fa fa-lightbulb p-3 rounded-circle" style="background-color: #f2184f;"></i>
+                                            <i class="fa fa-lightbulb-o text-white p-3 rounded-circle" style="background-color: #f2184f;"></i>
                                         </div>
                                         <div class="ms-4">
                                             <h6>RETINA READY</h6>
@@ -314,18 +357,18 @@
         <!-- -----------------COURSES------------------------------ -->
         <div style="background-color: whitesmoke; " class="pb-4">
             <div class= "container pt-4">
-                <h2><span class="our">OUR</span><span style="color: red;"> COURSES</span></h2>
+                <h2>OUR <span style="color: red;"> COURSES</span></h2>
                 <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         
             </div>
             <div class="container">
-                <div class="d-flex">
-                    <div class="w-25 ms-3 bg-white price-section pb-2">
+                <div class="row">
+                    <div class="col-md-3 bg-white price-section pb-2">
                         <div class="price">
                             <img width="100%" src="./Images/program.jpg" alt="image">
                             <p>$125</p>
                         </div>
-                        <div class="course-tech">
+                        <div class="p-2">
                             <p class="m-0"><span>Accounting</span> Technology</p>
                             <div style="border: 1px solid  #f2184f; height: .1rem; width: 3rem; background-color:  #f2184f; ">
                             </div>
@@ -338,12 +381,12 @@
                         </div>
                         
                     </div>
-                    <div class="w-25 ms-3 price-section bg-white pb-2">
+                    <div class="col-md-3 price-section bg-white pb-2">
                         <div class="price">
                             <img width="100%" src="./Images/js-icon.jpg" alt="image">
                             <p>$125</p>
                         </div>
-                        <div class="course-tech"">
+                        <div class="p-2">
                             <p><span>Accounting</span> Technology</p>
                             <div style="border: 1px solid  #f2184f; height: .1rem; width: 3rem; background-color:  #f2184f; ">
                             </div>
@@ -355,12 +398,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-25 ms-3 price-section bg-white pb-2">
+                    <div class="col-md-3 price-section bg-white pb-2">
                         <div class="price">
                             <img width="100%" src="./Images/node-icon.jpg" alt="image">
                             <p>$125</p>
                         </div>
-                        <div class="course-tech"">
+                        <div class="p-2">
                             <p><span>Accounting</span> Technology</p>
                             <div style="border: 1px solid  #f2184f; height: .1rem; width: 3rem; background-color:  #f2184f; ">
                             </div>
@@ -372,12 +415,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-25 ms-3 bg-white pb-2 price-section">
+                    <div class="col-md-3 bg-white pb-2 price-section">
                         <div class="price">
                             <img width="100%" src="./Images/ps-icon.jpg" alt="image">
                             <p>$125</p>
-                        </div>
-                        <div class="course-tech"">
+                        </div class="p-2">
                             <p><span>Accounting</span> Technology</p>
                             <div style="border: 1px solid  #f2184f; height: .1rem; width: 3rem; background-color:  #f2184f; ">
                             </div>
@@ -391,8 +433,9 @@
                     </div>
                 </div>
 
-                <div class="d-flex mt-4">
-                    <div class="w-25 ms-3 bg-white pb-2 price-section p-0">
+                <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-3 bg-white pb-2 price-section p-0">
                         <div class="price">
                             <img width="100%" src="./Images/ps-icon.jpg" alt="image">
                             <p>$125</p>
@@ -409,7 +452,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-25 ms-3 bg-white pb-2 p-0 price-section">
+                    <div class="col-md-3 bg-white pb-2 p-0 price-section">
                         <div class="price">
                             <img width="100%" src="./Images/html-icon.jpg" alt="image">
                             <p>$125</p>
@@ -427,7 +470,7 @@
                         </div>
                     </div>
                 
-                    <div class="w-25 ms-3 bg-white pb-2 p-0 price-section">
+                    <div class="col-md-3 bg-white pb-2 p-0 price-section">
                         <div class="price">
                             <img width="100%" src="./Images/js-icon.jpg" alt="image">
                             <p>$125</p>
@@ -444,7 +487,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-25 ms-3 bg-white pb-2 p-0 price-section">
+                    <div class="col-md-3 bg-white pb-2 p-0 price-section">
                         <div class="price">
                             <img width="100%" src="./Images/program.jpg" alt="image">
                             <p>$125</p>
@@ -464,7 +507,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- ---------WHY CHOOSE US-------------------------- -->
         <div class="container mt-4 pb-4">
             <div class="d-flex mt-4 justify-content-between">
                 <div class="w-50 mt-4">
@@ -503,37 +546,180 @@
                 </div>
             </div>
         </div>
+
+        <!-- -------------------STATS---------------------- -->
+        <div class="p-4 mt-4 stats text-white">
+            <div class="container pt-4">
+                <div class="d-flex justify-content-around pt-4">
+                    <div class="text-center">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <i class="fa fa-smile fa-2x text-danger"></i>
+                        </div>
+                        <p class="h1 mt-4">5,456</p>
+                        <p>HAPPY STUDENTS</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <i class="fa fa-book fa-2x text-danger"></i>
+                        </div>
+                        <p class="h1 mt-4">675</p>
+                        <p>OUR COURSES</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <i class="fa fa-users fa-2x text-danger"></i>
+                        </div>
+                        <p class="h1 mt-4">248</p>
+                        <p>OUR TEACHERS</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <i class="fa fa-trophy fa-2x text-danger"></i>
+                        </div>
+                        <p class="h1 mt-4">24</p>
+                        <p>AWARD WON</p>
+                    </div> 
+                </div>
+            </div> 
+        </div>
+
+        <!-- ---------------------------OUR TEACHERS--------------------- -->
+
+        <div class="container pb-4 pt-4">
+            <h4>OUR <span class="text-danger">TEACHERS</span></h4>
+            <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <div class="row ">
+                <div class="col-md-3">
+                    <img  src="./Images/teacher-m-1.jpg" alt="teacher">
+                    <div class="p-2 " style="background: whitesmoke;">
+                        <div>
+                            <p class="text-danger">David Jakaria - <span class="small text-black">Teacher</span></p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.
+                        </p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <i class="fa fa-facebook p-1 rounded-circle  text-white" style="background: #202c45;"></i>
+                                <i class="fa fa-twitter p-1 rounded-circle  text-white ms-4" style="background: #202c45;"></i>
+                                <i class="fa fa-google-plus rounded-circle  p-1 text-white ms-4" style="background: #202c45;"></i>
+                            </div>
+
+                            <button class="small text-white p-1 rounded border-0" style="background: #202c45;">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" style="background: whitesmoke;">
+                    <img src="./Images/teacher-m-2.jpg" alt="teacher">
+                    <div class="p-2">
+                        <div class="ms-4" >
+                            <p class="text-danger">David Jakaria - <span class="small text-black">Teacher</span></p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.
+                        </p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <i class="fa fa-facebook p-1 rounded-circle  text-white" style="background: #202c45;"></i>
+                                <i class="fa fa-twitter p-1 rounded-circle  text-white ms-4" style="background: #202c45;"></i>
+                                <i class="fa fa-google-plus rounded-circle  p-1 text-white ms-4" style="background: #202c45;"></i>
+                            </div>
+
+                            <button class="small text-white p-1 rounded border-0" style="background: #202c45;">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" style="background: whitesmoke;">
+                    <img src="./Images/teacher-m-3.jpg" alt="teacher">
+                    <div class="p-2">
+                        <div class="ms-4" >
+                            <p class="text-danger">David Jakaria - <span class="small text-black">Teacher</span></p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.
+                        </p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <i class="fa fa-facebook p-1 rounded-circle  text-white" style="background: #202c45;"></i>
+                                <i class="fa fa-twitter p-1 rounded-circle  text-white ms-4" style="background: #202c45;"></i>
+                                <i class="fa fa-google-plus p-1 rounded-circle  text-white ms-4" style="background: #202c45;"></i>
+                            </div>
+
+                            <button class="small text-white p-1 rounded border-0" style="background: #202c45;">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" style="background: whitesmoke;">
+                    <img src="./Images/teacher-m-4.jpg" alt="teacher">
+                    <div class="p-2">
+                        <div class="ms-4" >
+                            <p class="text-danger">David Jakaria - <span class="small text-black">Teacher</span></p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.
+                        </p>
+
+                        <div class="d-flex justify-content-around">
+                            <div>
+                                <i class="fa fa-facebook p-1 rounded-circle text-white" style="background: #202c45;"></i>
+                                <i class="fa fa-twitter p-1 rounded-circle  text-white ms-4" style="background: #202c45;"></i>
+                                <i class="fa fa-google-plus rounded-circle  p-1 text-white ms-4" style="background: #202c45;"></i>
+                            </div>
+
+                            <button class="small text-white rounded p-1 border-0" style="background: #202c45;">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
         
+
+        <!-- ---------------------------OUR GALLERY---------------------------------- -->
         <div  style="background-color: whitesmoke;">
             <div class="container">
                 <div class= "courses-heading" style="padding-left: 2rem; padding-top: 4rem;">
-                    <h2><span class="our">OUR</span><span style="color: red;">GALLERY</span></h2>
+                    <h2>OUR <span style="color: red;">GALLERY</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
                     <div class="row">
-                        <img class="col-md-3" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3 mt-4" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3 mt-4" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3 mt-4" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3 mt-4" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3 mt-4" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3 mt-4" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3 mt-4" src="./Images/huh!.jpg" alt="">
-                        <img class="col-md-3 mt-4" src="./Images/huh!.jpg" alt="">
+                        <img class="col-md-3" src="./Images/gallery-1.jpg" alt="">
+                        <img class="col-md-3" src="./Images/gallery-2.jpg" alt="">
+                        <img class="col-md-3" src="./Images/gallery-3.jpg" alt="">
+                        <img class="col-md-3" src="./Images/gallery-4.jpg" alt="">
+                        <img class="col-md-3 mt-4" src="./Images/gallery-5.jpg" alt="">
+                        <img class="col-md-3 mt-4" src="./Images/gallery-6.jpg" alt="">
+                        <img class="col-md-3 mt-4" src="./Images/gallery-7.jpg" alt="">
+                        <img class="col-md-3 mt-4" src="./Images/gallery-8.jpg" alt="">
+                        <img class="col-md-3 mt-4" src="./Images/gallery-9.jpg" alt="">
+                        <img class="col-md-3 mt-4" src="./Images/gallery-10.jpg" alt="">
+                        <img class="col-md-3 mt-4" src="./Images/gallery-11.jpg" alt="">
+                        <img class="col-md-3 mt-4" src="./Images/gallery-12.jpg" alt="">
                     </div>
             
                 </div>
             </div>
         </div>
 
+        <!-- -------------------SUBSCRIBE TO NEWSLETTER -->
         <div class="text-white p-4 mt-4" style="background-color: #f2184f;">
             <div class="container">
                 <div class="d-flex justify-content-between">
-                    <div>
-                        <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                    <div class="d-flex ">
+                        <i class="fa fa-envelope fa-2x mt-1"></i>
+                        <p class="ms-4" style="font-size: 1.5rem;">SUBSCRIBE TO OUR NEWSLETTER</p>
                     </div>
                     <div class="d-flex w-50" >
                         <input class="w-75" type="email" name="email" id="" placeholder="Your Email">
@@ -554,68 +740,94 @@
                             <p style="margin-top: 1rem;">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
                         </div>
                         <div class="footer-contact">
-                            <p> 123-456-789</p>
-                            <p> contact@yourdomain.com</p>
-                            <p>  www.yourdomain.com</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="useful-link">
-                            <p>Useful Link</p>
-                            <div>
-                                <ul>
-                                    <li><a href="">About Us</a></li>
-                                    <li><a href="">Our Courses</a></li>
-                                    <li><a href="">Pricing Table</a></li>
-                                    <li><a href="">Gallery</a></li>
-                                    <li><a href="">Shop</a></li>
-                                </ul>
+                            <div class="d-flex">
+                                <i class="fa fa-phone text-danger"></i>
+                                <p class="ms-2 margin-0"> 123-456-789</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa fa-envelope text-danger"></i>
+                                <p class="ms-2 margin-0"> contact@yourdomain.com</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa fa-chrome text-danger"></i>
+                                <p class="ms-2 margin-0">  www.yourdomain.com</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-3">
+                        <h5 class="text-white mb-4">Useful Links</h5>
+                        <div class="pt-1" style="border-bottom: dashed; padding-left: 1rem;">
+                            <p class="">About Us</p>
+                        </div>
+
+                        <div class="pt-1" style="border-bottom: dashed; padding-left: 1rem;">
+                            <p class="">Our Courses</p>
+                        </div>
+
+                        <div class="pt-1" style="border-bottom: dashed; padding-left: 1rem;">
+                            <p class="">Pricing Table</p>                           
+                        </div>
+                        <div class="pt-1" style="border-bottom: dashed; padding-left: 1rem; ">
+                            <p class="">Gallery</p>
+                        </div>
+                        <div class="pt-1" style="border-bottom: dashed; padding-left: 1rem; ">
+                            <p class="">Shop</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
                         <div>
-                            <p style="color: grey; font-size: 1.2rem;">Twitter Feed</p>
+                            <p class="text-white" style="color: grey; font-size: 1.2rem;">Twitter Feed</p>
                         </div>
 
                         <div class="twitter">
-                            <p>
-                                How do you pasta time? Puns by us, image by @Fisher_Photostudio, via #envatoelements https://t.co/nRKCGJFJdW
-                                Nov. 9, 2021
-                            </p>
-                            <p>
-                                RT @phase_runner: Train Jump: Baseplate Vs Final Image #photoshop #photomanipulation #digitalart #beforeafter https://t.co/qb0TdlK7mL
-                                Nov. 8, 2021
-                            </p>
+                            <div class="d-flex">
+                                <i class="fa fa-twitter text-danger mt-1"></i>
+                                <p class="ms-1">
+                                    How do you pasta time? Puns by us, image by @Fisher_Photostudio, via #envatoelements https://t.co/nRKCGJFJdW
+                                    Nov. 9, 2021
+                                </p>
+
+                            </div>
+
+                            <div class="d-flex">
+                                <i class="fa fa-twitter text-danger mt-1"></i>
+                                <p class="ms-1">
+                                    RT @phase_runner: Train Jump: Baseplate Vs Final Image #photoshop #photomanipulation #digitalart #beforeafter https://t.co/qb0TdlK7mL
+                                    Nov. 8, 2021
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-3">
-                        <div>
-                            <p style="color: grey; font-size: 1.2rem;">Opening Hours</p>
+                        <h5 class="text-white">Opening Hours</h5>
+                        <div class="pt-1" style="border-bottom: dashed;">
+                            <div class="d-flex justify-content-between pb-1">
+                                <p class="m-0">Mon-Tues:</p>
+                                <p class="m-0">6.00 am - 10.00 pm</p>
+                            </div>
                         </div>
 
-                        <div class="time">
-                            <div style="display: flex ;">
-                                <p>Mon - Tues:</p>
-                                <p style="margin-left: 1rem;">6.00 am - 10.00 pm</p>
+                        <div class="pt-1" style="border-bottom: dashed;">
+                            <div class="d-flex justify-content-between pb-1">
+                                <p class="m-0">Wed-Thurs:</p>
+                                <p class="m-0">8.00 am - 6.00 pm</p>
                             </div>
+                        </div>
 
-                            <div style="display: flex ;">
-                                <p>Wed - Thur:</p>
-                                <p style="margin-left: 1rem;">8.00 am - 6.00 pm</p>
+                        <div class="pt-1" style="border-bottom: dashed;">
+                            <div class="d-flex justify-content-between pb-1">
+                                <p class="m-0">Fri:</p>
+                                <p class="m-0">3:00pm - 8:00pm</p>
                             </div>
+                        </div>
 
-                            <div style="display: flex ;">
-                                <p>Fri:</p>
-                                <p style="margin-left: 1rem;">3.00 pm - 8.00 pm</p>
-                            </div>
-
-                            <div style="display: flex ;">
-                                <p>Sun:</p>
-                                <p style="margin-left: 1rem;">closed</p>
+                        <div class="pt-1" style="border-bottom: dashed; ">
+                            <div class="d-flex justify-content-between pb-1">
+                                <p class="m-0">Sun:</p>
+                                <p class="m-0">closed</p>
                             </div>
                         </div>
                     </div>
@@ -626,20 +838,28 @@
             <div class="d-flex justify-content-around">
                 <div style="color: grey;">
                    <p>Call us now</p> 
+                   <a>+61 3 1234 5678</a> <br>
                    <a>+61 3 1234 5678</a>
                 </div>
-                <div>
-
+                
+                <div class="mt-3">
+                    <i class="fa fa-facebook text-white border p-1"></i>
+                    <i class="fa fa-twitter text-white border p-1 ms-1"></i>
+                    <i class="fa fa-skype text-white border p-1 ms-1"></i>
+                    <i class="fa fa-youtube text-white border p-1 ms-1"></i>
+                    <i class="fa fa-instagram text-white border p-1 ms-1"></i>
+                    <i class="fa fa-pinterest text-white border p-1 ms-1"></i>
                 </div>
-                <div class="sub-email">
-                    <div>
-                        <input type="email" name="email" id="" placeholder="Your Email">
-                        <button>Subscribe</button>
+
+                <div class="sub-email mt-4">
+                    <div class="d-flex">
+                        <input class="p-2" type="email" name="email" id="" placeholder="Your Email">
+                        <button class="border-0 bg-danger text-white p-2">Subscribe</button>
                     </div>
                 </div>
             </div>
 
-            <div style="background-color: black; padding: 2rem; margin-top: 1rem;">
+            <div style="background-color: black; padding: 1rem; margin-top: 1rem;">
                 <p>
                     Copyright ©2016 ThemeMascot. All Rights Reserved
                 </p>
