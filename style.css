@@ -56,6 +56,26 @@
     display:block;
 }
 
+.dropdown-button    {
+    background-color: transparent;
+}
+.dropdown-button:hover   {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    color: black !important;
+}
+.book-button    {
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 100px;
+    margin-left: 150px;
+    padding: 10px;
+    border: none;
+
+}
+
 .slideshow-container {
     width: 100%;
     position: relative;
